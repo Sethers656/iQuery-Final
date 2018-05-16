@@ -62,24 +62,25 @@
                 <table id="dataTable" class="form" border="1">
 					<tbody>
 					<?php foreach($BX_NAME as $a => $b){ ?>
+                        
 						<tr>
 							<p>
 								<td >
-									<?php echo $a+1; ?>
+									
 								</td>
 								<td>
 									<label>Name</label>
-									<input type="text" readonly="readonly" name="BX_NAME[$a]" value="<?php echo $BX_NAME[$a]; ?>">
+									<input type="text" readonly="readonly" name="<?php echo BX_NAME[$a]; ?>" value="<?php echo $BX_NAME[$a]; ?>">
 								</td>
 								<td>
 									<label for="BX_a1">Answer A:</label>
-                                     <input type="radio" name="answer<?php echo [$a]?>" value="a1"> <?php echo $BX_a1[$a]; ?><br>
+                                     <input type="radio" name="<?php echo BX_NAME[$a]; ?>" value="answer<?php echo [$a]?>"> <?php echo $BX_a1[$a]; ?><br>
                                     <label for="BX_a2">Answer B: </label>
-                                    <input type="radio" name="answer<?php echo [$a]?>" value="a2"> <?php echo $BX_a2[$a]; ?><br>
+                                    <input type="radio" name="<?php echo BX_NAME[$a]; ?>" value="answer<?php echo [$a]?>"> <?php echo $BX_a2[$a]; ?><br>
                                      <label for="BX_a3">Answer C: </label>
-                                    <input type="radio" name="answer<?php echo [$a]?>" value="a3"> <?php echo $BX_a3[$a]; ?><br>
+                                    <input type="radio" name="<?php echo BX_NAME[$a]; ?>" value="answer<?php echo [$a]?>"> <?php echo $BX_a3[$a]; ?><br>
                                         <label for="BX_a4">Answer D: </label>
-                                    <input type="radio" name="answer<?php echo [$a]?>" value="a4"> <?php echo $BX_a4[$a]; ?><br>
+                                    <input type="radio" name="<?php echo BX_NAME[$a]; ?>" value="answer<?php echo [$a]?>"> <?php echo $BX_a4[$a]; ?><br>
                                 </td>
 							</p>
 						</tr>
