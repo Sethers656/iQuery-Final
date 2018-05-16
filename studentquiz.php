@@ -23,6 +23,10 @@
 				$BX_a2=$_POST['BX_a2'];
 				$BX_a3=$_POST['BX_a3'];		
                 $BX_a4=$_POST['BX_a4'];	
+                $R_NAME=$_POST['R_NAME'];
+                $RNAME1=$_POST['RNAME1'];
+                $TFNAME=$_POST['TFNAME']
+                
 			?>
 			<fieldset class="row1">
                 <legend>Travel Information</legend>
@@ -69,7 +73,7 @@
 									
 								</td>
 								<td>
-									<label>Name</label>
+									<label>MC Question</label>
 									<input type="text" readonly="readonly" name="<?php echo BX_NAME[$a]; ?>" value="<?php echo $BX_NAME[$a]; ?>">
 								</td>
 								<td>
@@ -81,6 +85,50 @@
                                     <input type="radio" name="<?php echo BX_NAME[$a]; ?>" value="answer<?php echo [$a]?>"> <?php echo $BX_a3[$a]; ?><br>
                                         <label for="BX_a4">Answer D: </label>
                                     <input type="radio" name="<?php echo BX_NAME[$a]; ?>" value="answer<?php echo [$a]?>"> <?php echo $BX_a4[$a]; ?><br>
+                                </td>
+							</p>
+						</tr>
+					<?php } ?>
+					</tbody>
+                </table>
+                <table id="shortR" class="form" border="1">
+					<tbody>
+					<?php foreach($BX_NAME as $a => $b){ ?>
+                        
+						<tr>
+							<p>
+							
+								<td>
+									<label>Short Response Question</label>
+									<input type="text" readonly="readonly" name="<?php echo BX_NAME[$a]; ?>" value="<?php echo $RNAME[$a]; ?>">
+								</td>
+								
+									<td><input type="text" id="quiz7" style="display:block;" size=60 maxlength=60 value=""></td>
+                               
+							</p>
+						</tr>
+					<?php } ?>
+					</tbody>
+                </table>
+                <table id="tfTable" class="form" border="1">
+					<tbody>
+					<?php foreach($BX_NAME as $a => $b){ ?>
+                        
+						<tr>
+							<p>
+								<td >
+									
+								</td>
+								<td>
+									<label>True/False Question</label>
+									<input type="text" readonly="readonly" name="<?php echo TFNAME[$a]; ?>" value="<?php echo $TFNAME[$a]; ?>">
+								</td>
+								<td>
+									
+                                     <input type="radio" name="tf<?php echo BX_NAME[$a]; ?>" value="True"> True <br>
+                                
+                                    <input type="radio" name="tf<?php echo BX_NAME[$a]; ?>" value="False"> False <br>
+                                   
                                 </td>
 							</p>
 						</tr>
