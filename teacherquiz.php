@@ -193,9 +193,9 @@
                     <tr style="display:block;" id="shortR">
                       <td><input type="checkbox" required="required" name="chk[]" checked="checked" /></td>
                                 <td><label>Question</label></td>
-                              <td><input type="text" name="R_NAME[]" style="display:block;" size=20 maxlength=12 value=""></td>
+                              <td><input type="text" name="R_NAME[]"  size=20 maxlength=12 value=""></td>
 
-                              <td><input type="text"  name="R_NAME1[]" style="display:block;" size=60 maxlength=60 value=""></td>
+                            
 
                             </td>
                             </tr>

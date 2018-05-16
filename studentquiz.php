@@ -7,7 +7,7 @@
     </head>
     <body>    
         <form action="" class="register">
-            <h1>YouAreBUS Ticket Reservation</h1>
+           
 			<?php if(isset($_POST)==true && empty($_POST)==false): 
 				$chkbox = $_POST['chk'];
 				$bus = $_POST['bus'];
@@ -28,8 +28,9 @@
                 $TFNAME=$_POST['TFNAME']
                 
 			?>
+             <h1>iQuery Generated Quiz</h1>
 			<fieldset class="row1">
-                <legend>Travel Information</legend>
+                <legend>Quiz Information</legend>
 				<p>
                     <label>Quiz Name 
                     </label>
@@ -73,7 +74,7 @@
 									
 								</td>
 								<td>
-									<label>MC Question</label>
+									<label>MC Questions</label>
 									<input type="text" readonly="readonly" name="<?php echo BX_NAME[$a]; ?>" value="<?php echo $BX_NAME[$a]; ?>">
 								</td>
 								<td>
@@ -100,7 +101,7 @@
 							
 								<td>
 									<label>Short Response Question</label>
-									<input type="text" readonly="readonly" name="<?php echo BX_NAME[$a]; ?>" value="<?php echo $RNAME[$a]; ?>">
+									<input type="text" readonly="readonly" name="<?php echo R_NAME[$a]; ?>" value="<?php echo $R_NAME[$a]; ?>">
 								</td>
 								
 									<td><input type="text" id="quiz7" style="display:block;" size=60 maxlength=60 value=""></td>
