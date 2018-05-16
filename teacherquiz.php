@@ -184,9 +184,9 @@
 							</select>
 						 </td>
 
-                    </tr>
-                    <p>
-                    </tbody>
+                   
+                  
+                    
                   </table>
                   <table id="shortRtable" class="form" border="1">
                     <tbody>
@@ -205,10 +205,10 @@
                           </tbody>
                             </table>
         <table id="tfTable" class="form" border="1">
-              <tr  style="display:inline-block;" id="tf">
+              <tr   id="tf">
                               <td><input type="checkbox" required="required" name="chk[]" checked="checked" /></td>
                                    <td><label>Question. </label></td>
-                                   <td><input type="text" id="quiz4" name="TFNAME[]" style="display:inline-block;" size=20 maxlength=12 value=""></td>
+                                   <td><input type="text" id="quiz4" name="TF_NAME[]" size=20 maxlength=12 value=""></td>
                                    <td><label>T/F </label></td>
 
                                    <td><select>
@@ -219,8 +219,8 @@
 
                                    </td>
                              </tr>
-                           </p>
-                           </tbody>
+                          
+                          
                 </table>
 				<div class="clear"></div>
             </fieldset>

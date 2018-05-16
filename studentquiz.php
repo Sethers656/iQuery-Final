@@ -24,8 +24,7 @@
 				$BX_a3=$_POST['BX_a3'];		
                 $BX_a4=$_POST['BX_a4'];	
                 $R_NAME=$_POST['R_NAME'];
-                $RNAME1=$_POST['RNAME1'];
-                $TFNAME=$_POST['TFNAME']
+                $TF_NAME=$_POST['TF_NAME']
                 
 			?>
              <h1>iQuery Generated Quiz</h1>
@@ -67,12 +66,8 @@
                 <table id="dataTable" class="form" border="1">
 					<tbody>
 					<?php foreach($BX_NAME as $a => $b){ ?>
-                        
 						<tr>
 							<p>
-								<td >
-									
-								</td>
 								<td>
 									<label>MC Questions</label>
 									<input type="text" readonly="readonly" name="<?php echo BX_NAME[$a]; ?>" value="<?php echo $BX_NAME[$a]; ?>">
@@ -94,17 +89,16 @@
                 </table>
                 <table id="shortR" class="form" border="1">
 					<tbody>
-					<?php foreach($BX_NAME as $a => $b){ ?>
-                        
+					<?php 
+                        foreach($R_NAME as $a => $b){ ?>
 						<tr>
 							<p>
-							
 								<td>
 									<label>Short Response Question</label>
-									<input type="text" readonly="readonly" name="<?php echo R_NAME[$a]; ?>" value="<?php echo $R_NAME[$a]; ?>">
+									<input type="text" readonly="readonly" name="<?php echo R_NAME[$a]; ?>" value="<?php echo $R_NAME[$a+1]; ?>">
 								</td>
 								
-									<td><input type="text" id="quiz7" style="display:block;" size=60 maxlength=60 value=""></td>
+									<td><input type="text" id="quiz7"  size=60 maxlength=60 value=""></td>
                                
 							</p>
 						</tr>
@@ -113,7 +107,7 @@
                 </table>
                 <table id="tfTable" class="form" border="1">
 					<tbody>
-					<?php foreach($BX_NAME as $a => $b){ ?>
+					<?php foreach($TF_NAME as $a => $b){ ?>
                         
 						<tr>
 							<p>
@@ -122,13 +116,13 @@
 								</td>
 								<td>
 									<label>True/False Question</label>
-									<input type="text" readonly="readonly" name="<?php echo TFNAME[$a]; ?>" value="<?php echo $TFNAME[$a]; ?>">
+									<input type="text" readonly="readonly" name="<?php echo TF_NAME[$a+1]; ?>" value="<?php echo $TF_NAME[$a+1]; ?>">
 								</td>
 								<td>
 									
-                                     <input type="radio" name="tf<?php echo BX_NAME[$a]; ?>" value="True"> True <br>
+                                     <input type="radio" name="tf<?php echo TF_NAME[$a+1]; ?>" value="True"> True <br>
                                 
-                                    <input type="radio" name="tf<?php echo BX_NAME[$a]; ?>" value="False"> False <br>
+                                    <input type="radio" name="tf<?php echo TF_NAME[$a+1]; ?>" value="False"> False <br>
                                    
                                 </td>
 							</p>
