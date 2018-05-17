@@ -110,8 +110,9 @@ fieldset.row5{
 	border-top:1px solid #F1F1F1;
 	border-bottom:1px solid #F1F1F1;
 	border-left:0px solid #F1F1F1;
-	padding:2px;
+	padding:5px;
 	margin:0;
+    width:400px;
 }
 .register legend{
     color: #4C99CC;
@@ -235,5 +236,9 @@ p.agreement label{
     margin-top:3px;
 }
 
-
+input[type='radio'], label{   
+    vertical-align: baseline;
+    padding: 10px;
+    margin: 10px;
+ }
 
